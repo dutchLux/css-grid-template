@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Using CSS Grid</title>
+	<style>
+		body{
+			color: #fff;
+			font-family: 'Nunito Semibold';
+			text-align: center;
+		}
+		#content{
+			display: grid;
+			/*grid-template-columns: 30% 20% 50%;*/
+			/*grid-template-columns: 1fr 2fr 1fr;*/
+			grid-template-columns: repeat(3, 1fr);
+			grid-template-rows: repeat(3, minmax(250px, auto));
+			/*grid-auto-rows: minmax (230px, auto);*/
+			grid-column-gap: 10px;
+			grid-row-gap: 10px;
+			max-width: 960px;
+			margin: 0 auto;
+		}
+		#content div{
+			background: #3bbced; /* light bluish color */
+			padding: 30px;
+		}
+		#content div:nth-child(even){
+			background: #777; /* charcoal color */
+			padding: 30px;
+		}
+	</style>
+</head>
+<body>
+
+	<div id="content">
+
+		<div>1<img src="1_5x8-front.jpg" alt="picture of 4975 Starr" width="200" length="200"></div>
+		<div>2<img src="2_5x8-front.jpg" alt="picture of 4975 Starr" width="200" length="200"></div>
+		<div>3<h3>Mobile coops: runners & wheels</h3>
+                <p>Treated flooring is standard on all coops, and underneath, you'll see heavy runners made of treated lumber. This extra lift prevents rot and provides shade for resting and for hunting worms. The runners also assist loading and unloading. They're strong so you can loop a chain through and move your coop with a small tractor. This year, our carpenters come up with a new 5x8 version that comes on wheels. For this, we thank a brother-in-law. After some discussion and experimentation, he designed, welded, and tested a prototype over the winter.</p></div>
+		<div>4<img src="starr.jpg" alt="picture of 4975 Starr" width="200" length="200"></div>
+		<div>5<p>Why do folks in Stanwood, MI have such a sunny disposition? Because breakfast includes fresh, nutritious eggs thanks to the quality chicken coops found in many backyards. Whether you’re a growing family, a self-sufficient lady, or a gentleman farmer, a Stanwood Coop is a great choice for raising backyard chickens. Fully assembled, our horse &amp; buggy carpenters use local materials, and their quality construction is designed for every element of Michigan weather, all of this at prices that can't be beat. Your chickens will love their new home!</p></div>
+		<div>6</div>
+		<div>7            <section>
+                <ul>
+                    <li><strong>You Pickup</strong></li>
+                    <li>4x6 on runners: $1,055</li>
+                    <li>5x8 on runners: $1,156</li>
+                    <li>5x8 on wheels: $1,663</li>
+                    <li>Chicken run: $349</li>
+                </ul>
+            </section></div>
+		<div>8<img src="3_5x8-front.jpg" alt="picture of 4975 Starr" width="200" length="200"><</div>
+		<div>9<img src="4_5x8-rear.jpg" alt="picture of 4975 Starr" width="200" length="200"></div>
+
+	</div>
+
+</body>
+</html>
